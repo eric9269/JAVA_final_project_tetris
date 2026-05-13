@@ -61,6 +61,9 @@ java -cp out tetris.TetrisApp
 ```text
 JAVA_final_project_tetris/
 ├── README.md
+├── docs/
+│   ├── architecture.md
+│   └── pull-request-guide.md
 └── src/
     └── tetris/
         ├── GamePanel.java
@@ -77,6 +80,15 @@ JAVA_final_project_tetris/
 - `GameState`：負責棋盤資料、碰撞判定、方塊固定、消行、分數與遊戲結束狀態。
 - `Piece`：代表目前正在下落的方塊，包含位置、形狀與旋轉行為。
 - `Tetromino`：定義七種 Tetris 方塊的初始形狀與顏色。
+
+更多類別關係、has-a 關係與遊戲啟動流程，請參考 [架構與 UML 文件](docs/architecture.md)。
+
+## Pull Request 協作
+
+本專案會用三個階段逐步開發，並把 pull request 當作協作與教學範例。  
+建議每個 PR 都清楚說明背景、變更摘要、驗證方式、review 重點與後續工作。
+
+詳細準則請參考 [Pull Request Collaboration Guide](docs/pull-request-guide.md)。
 
 ## 分數規則
 
